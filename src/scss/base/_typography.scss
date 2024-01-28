@@ -1,0 +1,65 @@
+html {
+    @include xs {
+        font-size: 16px;
+    }
+
+    @include sm {
+        font-size: 18px;
+    }
+
+    @include md {
+        font-size: 20px;
+    }
+
+    @include lg {
+        font-size: 22px;
+    }
+
+    @include xl {
+        font-size: 24px;
+    }
+
+    @include xxl {
+        font-size: 26px;
+    }
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    // font-family: 'Asap', sans-serif;
+    color: $secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1.1rem;
+}

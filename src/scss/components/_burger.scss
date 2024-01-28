@@ -1,0 +1,43 @@
+@mixin burgerAnimation($translateY, $rotate) {
+    -webkit-transform: translateY($translateY) rotate($rotate);
+    -ms-transform: translateY($translateY) rotate($rotate);
+    -o-transform: translateY($translateY) rotate($rotate);
+    transform: translateY($translateY) rotate($rotate);
+}
+
+#burger {
+    @include md {
+        display: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .line {
+        width: 40px;
+        height: 4px;
+        background-color: $secondary;
+        display: block;
+        margin: 6px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &.is-active .line {
+        background-color: $secondary;
+    }
+
+    &.is-active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    &.is-active .line:nth-child(1) {
+        @include burgerAnimation(10px, 45deg);
+    }
+
+    &.is-active .line:nth-child(3) {
+        @include burgerAnimation(-10px, -45deg);
+    }
+}

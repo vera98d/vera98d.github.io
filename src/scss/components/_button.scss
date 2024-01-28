@@ -1,0 +1,26 @@
+button,
+a.button {
+    display: block;
+    padding: 0.6em 1em;
+    font-size: .8rem;
+    border: none;
+    border-radius: 1.2em;
+    cursor: pointer;
+    background: $secondary-light;
+    color: $white;
+    text-transform: uppercase;
+    transition: .4s;
+
+    &:hover {
+        background-color: $secondary-light2;
+    }
+
+    &:disabled {
+        background-color: $secondary-light-disabled;
+
+        &:hover {
+            background-color: $secondary-light-disabled;
+            cursor: auto;
+        }
+    }
+}

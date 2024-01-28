@@ -1,26 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Navbar />
+  <Home />
+  <About />
+  <Skills />
+  <Projects />
+  <Contact />
+  <footer>{{ $t("footer") }}</footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from "./components/Navbar.vue";
+import Home from "./components/Home.vue";
+import Skills from "./components/Skills.vue";
+import About from "./components/About.vue";
+import Projects from "./components/Projects.vue";
+import Contact from "./components/Contact.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Navbar,
+    Home,
+    About,
+    Skills,
+    Projects,
+    Contact,
+  },
+};
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0 auto;
+  @include flex-container(column, start, center, wrap);
+
+  footer {
+    width: 100%;
+    padding: $content-y-padding $content-x-padding;
+    text-align: center;
+    background: $primary-light;
+    font-size: 0.8rem;
+  }
 }
 </style>

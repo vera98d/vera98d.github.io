@@ -1,0 +1,41 @@
+@import '../layouts/flex';
+@import '../abstracts/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: clip;
+    overflow-y: visible;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+}
+
+.mainContainer {
+    width: 100%;
+    @include flex-container(column, space-around, center, nowrap);
+    position: relative;
+}
+
+.contentContainer {
+    width: 100%;
+    max-width: $max-content-width;
+    padding: $content-y-padding $content-x-padding;
+}
+
+span {
+    color: $priary-dark;
+    font-weight: 600;
+}
