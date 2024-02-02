@@ -113,7 +113,7 @@ export default {
       position: relative;
       display: block;
       width: calc(100% + 1.3px);
-      height: 4.5em;
+      height: 4em;
     }
     .shape-fill {
       fill: $primary;

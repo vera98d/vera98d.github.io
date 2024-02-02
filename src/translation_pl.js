@@ -97,7 +97,6 @@ export default {
         placeholderEmail: "Podaj swój e-mail",
         placeholderMessage: "Zapisz swoją wiadomość",
         nameErrorBlank: "Pole imię i nazwisko musi być wypełnione.",
-        nameErrorSurname: "Podaj też swoje nazwisko.",
         emailErrorBlank: "Pole e-mail musi być wypełnione.",
         emailErrorInvalid: "Adres e-mail jest niepoprawny",
         messageErrorBlank: "Pole Wiadomość musi być wypełnione.",
