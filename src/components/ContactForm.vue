@@ -75,9 +75,20 @@ export default {
         emailError: "",
         messageError: "",
       },
-      isFormValid: false,
       loading: false,
     };
+  },
+  computed: {
+    isFormValid() {
+      return (
+        this.fieldErrors.nameError === "" &&
+        this.fieldErrors.emailError === "" &&
+        this.fieldErrors.messageError === "" &&
+        this.formData.name.length > 0 &&
+        this.formData.email.length > 0 &&
+        this.formData.message.length > 0
+      );
+    },
   },
   methods: {
     sendEmail() {
@@ -102,23 +113,9 @@ export default {
         );
     },
 
-    updateFormValidity() {
-      this.isFormValid =
-        this.fieldErrors.nameError === "" &&
-        this.fieldErrors.emailError === "" &&
-        this.fieldErrors.messageError === "" &&
-        this.formData.name.length > 0 &&
-        this.formData.email.length > 0 &&
-        this.formData.message.length > 0;
-    },
-
     validateName() {
-      const nameRegex = /^[A-Za-z]+ [A-Za-z]+$/;
-
       if (this.formData.name.length <= 0) {
         this.fieldErrors.nameError = this.$t("contact.messageErrorBlank");
-      } else if (!nameRegex.test(this.formData.name)) {
-        this.fieldErrors.nameError = this.$t("contact.nameErrorSurname");
       } else {
         this.fieldErrors.nameError = "";
       }
@@ -156,10 +153,6 @@ export default {
       if (this.formData.message) {
         this.validateMessage();
       }
-    },
-    formData: {
-      handler: "updateFormValidity",
-      deep: true,
     },
   },
 };

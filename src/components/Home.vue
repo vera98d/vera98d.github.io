@@ -48,7 +48,7 @@ export default {
 
     @include md {
       @include flex-container(row, space-between, center, nowrap);
-      padding: 3.2em $content-x-padding 2em;
+      padding: 2em $content-x-padding 1.2em;
     }
 
     @include md-landscape {

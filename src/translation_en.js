@@ -96,7 +96,6 @@ export default {
         placeholderEmail: "Enter your email",
         placeholderMessage: "Type your message",
         nameErrorBlank: "The name field must be filled in.",
-        nameErrorSurname: "Please provide your surname as well.",
         emailErrorBlank: "The email field must be filled in.",
         emailErrorInvalid: "Invalid email address.",
         messageErrorBlank: "The Message field must be filled in.",
