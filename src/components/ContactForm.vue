@@ -115,7 +115,7 @@ export default {
 
     validateName() {
       if (this.formData.name.length <= 0) {
-        this.fieldErrors.nameError = this.$t("contact.messageErrorBlank");
+        this.fieldErrors.nameError = this.$t("contact.nameErrorBlank");
       } else {
         this.fieldErrors.nameError = "";
       }
