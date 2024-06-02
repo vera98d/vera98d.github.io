@@ -19,7 +19,7 @@ export default {
         cardsContent: {
             experience: {
                 title: "Doświadczenie",
-                description: "Jestem początkującym <span>frontend developerem</span>, jednak postawiłam już swoje pierwsze kroki w branży IT. Od 2,5 roku zajmuję się tworzeniem raportów biznesowych dla klientów oraz przetwarzaniem i analizą danych, korzystając z narzędzi takich jak SQL, DAX, Power BI , HTML, CSS i Python. Byłam również zaangażowana w <span>tworzenie modyfikacji</span> dla klientów przy użyciu języka programowania X++.",
+                description: "Jestem nieustanie rozwijającym się <span>frontend developerem</span>, jednak postawiłam już swoje pierwsze kroki w branży IT. Od 3 lat zajmuję się tworzeniem raportów biznesowych dla klientów, przetwarzaniem i analizą danych, korzystając z narzędzi SQL, DAX, Power BI. Jestem również zaangażowana w <span>tworzenie komponentów i aplikacji</span> przy użyciu technologii JavaScript, TypeScript, React, Microsoft Dataverse Web API, HTML oraz CSS.",
             },
             education: {
                 title: "Edukacja",
