@@ -19,7 +19,7 @@ export default {
         cardsContent: {
             experience: {
                 title: "Experience",
-                description: "I am a novice <span>frontend developer</span>, but I have already taken my first steps in the IT industry. For 2.5 years, I have been involved in creating business reports for clients and processing and analyzing data using tools such as SQL, DAX, Power BI, HTML, CSS, and Python. I have also been engaged in <span>creating modifications</span> for clients using the X++ programming language.",
+                description: "I am constantly evolving <span>frontend developer</span>, but I have already taken my first steps in the IT industry. For the past three years, I have been creating business reports for clients, processing and analyzing data using tools such as SQL, DAX, and Power BI. I am also involved in <span>creating components and applications</span> using technologies such as JavaScript, TypeScript, React, Microsoft Dataverse Web API, HTML, and CSS.",
             },
             education: {
                 title: "Education",
